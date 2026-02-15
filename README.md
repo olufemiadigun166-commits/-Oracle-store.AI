@@ -1,2 +1,2 @@
 # -Oracle-store.AI
-Buying of products among small scale companies 
+Buying and selling of  products 
