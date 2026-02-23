@@ -1,0 +1,54 @@
+# robots.txt for ShopZone E-Commerce Website
+
+# Allow all search engines to crawl everything
+User-agent: *
+Allow: /
+
+# Specific instructions for Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Specific instructions for Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+# Block access to admin areas (if you have them)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cart-checkout/
+Disallow: /user-profile/
+
+# Block access to duplicate content
+Disallow: /*?sort=*
+Disallow: /*?filter=*
+Disallow: /*?page=*
+
+# Allow search engines to index images
+User-agent: Googlebot-Image
+Allow: /images/
+
+# Sitemap location
+Sitemap: https://shopzone.com/sitemap.xml
+Sitemap: https://shopzone.com/sitemap-products.xml
+Sitemap: https://shopzone.com/sitemap-categories.xml
+
+# Additional settings
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+
+# Allow access to CSS and JS for proper rendering
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.gif$
+
+# Crawl-delay (optional - in seconds)
+Crawl-delay: 1
+
+# Host directive (optional - specify preferred domain)
+Host: https://shopzone.com
